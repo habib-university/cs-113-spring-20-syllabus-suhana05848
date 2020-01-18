@@ -1,0 +1,192 @@
+\documentclass[a4paper]{article}
+
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{tabularx} 
+\usepackage{url} 
+
+% Help taken from http://tex.stackexchange.com/ and https://www.sharelatex.com/
+
+\renewcommand{\thesection}{\Roman{section}.} 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\begin{document}
+
+\begin{center}
+
+  {\LARGE\bf HABIB UNIVERSITY}\\[10pt]
+
+  {\large\bf CS 113 Discrete Mathematics}\\[10pt]
+
+  {\it ``Computer science is no more about computers than astronomy is about telescopes.''$\quad$-- Edsger Dijkstra}\\[10pt]
+  {\it ``All models are wrong, but some are useful.''$\quad$-- George Box}\\[10pt]
+
+  Spring 2020
+
+\begin{tabularx}{\textwidth}{lX}
+  Instructors:&  Waqar Saleem, Carina Dreyer\\
+  RA:&  Basem Atiq\\
+  TA's:&  Muhammad Usaid, Syed Bilal Hoda, Muhammad Faizan Shaikh\\
+  Course Website:& \href{https://lms.habib.edu.pk/portal/site/3bdced2c-d399-4a25-bbb8-05ceef08fa42}{LMS}\\
+  Discussion Forum:& \href{https://habibedu.workplace.com/groups/1213569312364085/}{Workplace}\\
+  Live Syllabus:&  \href{https://docs.google.com/spreadsheets/d/e/2PACX-1vTkDE0uMk7tSfhTJhVDdEH_rqpBgTFo0NrGUPbbNWId1HZwK9yXZRqB7s8Ow9HRDlwoWcJp79uczqXe/pubhtml?gid=277691889}{Link} \\
+  Contact \& Logistics:&  See live syllabus \\
+  Course Prerequisites:&  None\\
+  \\
+Content Area: & This course is part of CS Foundation. It is required for a CS major and fulfills the requirements of a CS minor. For other students, it can be counted as either a Free Elective, University Elective, SSE Elective, CS Elective, or CS requirement.
+\end{tabularx}
+
+\end{center}
+
+\section{Rationale:}
+
+Computer Science is the study of computation performed inevitably on discrete machines. Modeling and analysis of these computations require formal methods to reason about them as well as a mathematics that deals with discrete events and entities. In addition, computation follows a certain logic. Understanding this logic helps to not only understand computation but to prove properties of algorithms like their complexity and correctness.
+
+This course is primarily an exercise in proofs. After covering some of the logic required to perform proofs, we study various discrete entities and techniques which are common in the design and analysis of algorithms. When studying these entities, our aim is to gain sufficient familiarity with them so as to prove their various properties. As such, this course equips students with essential mathematical tools that they will encounter in future Computer Science courses. It develops a capacity for formal mathematical manipulation and abstract thought, both of which are essential for the successful pursuit of Computer Science.
+
+\section{Course Aims and Outcomes:}
+
+This course aims to:
+\begin{itemize}
+\item develop a capacity for performing mathematical proofs,
+\item introduce various discrete structures and techniques,
+\item develop a capacity for abstract thought necessary for the study of Computer Science.
+\end{itemize}
+
+On successful completion of this course, a student will:
+\begin{itemize}
+  \item correctly solve problems related to first and second order logic
+  \item provide a correct proof for a given mathematical statement
+  \item apply known theorems and algorithms to correctly solve problems related to discrete structures, e.g. graphs.
+  \item correctly solve problems using discrete techniques, e.g. probability and combinatorics.
+\end{itemize}
+
+\section{Format and Procedures:}
+
+This is a highly theoretical course. You are encouraged to attend--physically and mentally--all lectures and do the assignments and readings in a timely manner. The instructors will make all efforts to closely follow the course textbook so that you have a ready reference.
+
+This is a 3 credit hour course. The \href{https://www.lasc.edu/students/Credit%20Hour%20Definition%20for%20LASC.pdf}{rule of thumb} for preparation time is at least 2 hours of work outside class for every credit hour. In previous iterations of this course, students have reported spending an average of about 5.9 hours per week outside class. This may vary based on your comfort with mathematics and capacity to absorb and apply new ideas.
+
+Your grasp of the course content will be assessed through 2 written exams, frequent quizzes, and 6 homework assignments. Quizzes may or may not be announced in advance and will be held over LMS. Homework assignments are to be attempted individually. They will generally be released on Mondays and will be due on the Wednesday of the next week. A homework may contain problems on material to be covered the week it is released, but not from the next week.
+
+All homework will be released and will have to be submitted over \href{https://github.com/}{GitHub} and will be typeset using \href{https://tobi.oetiker.ch/lshort/lshort.pdf}{\LaTeX}. The use of \href{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)—Basic_Drawing}{TikZ} for making diagrams in \LaTeX, if required, is highly recommended. Each homework assignment will be accompanied by a feedback form which you will have to fill at the time of submission.
+
+Your score in the assignments category will be based on your submission for some arbirtrarily selected homework assignments.
+
+Some other ground rules for the course are as follows.
+\begin{description}
+\item[Recitations] You are expected to attend your weekly recitation. Attendance will be taken.
+\item[Communication] Official course communication will take place over the course discussion forum and email. It is your responsibility to stay up to date with it. Please use the course forum to discuss all course related matters and queries, including ambiguities in assignment questions.
+\item[Punctuality] Please respect deadlines. Submit your work by the indicated time. Incomplete work will receive partial credit. Late work will not be accepted or graded.
+\item[Contesting marks] Concerns regarding a score will be entertained by the respective instructor up to a week after the release of the score. Concerns raised later will not be entertained.
+\item[Grace marks] Requests for grace marks for whatever reason will not be entertained and each such request will result in a penalty of 1\% from the overall score.
+\item[Course Policy] Each instructor's course policy, regarding e.g. use of devices, coming late, etc. can be found in the live syllabus and must be adhered to,
+\item[Behavior] You are expected to maintain a behavior befitting {\it Yohsin} and acknowledging the classroom as a place of learning, exploration, and experimentation.% Please extend the course assistants the same respect and consideration that you do to the faculty.
+\end{description}
+
+The University's standard policies on attendance, inclusivity, office hours, and academic integrity apply in this course. These are described below.
+
+\section{Course Requirements:}
+
+%Whatever tasks and assignments you include in your course should be aligned with the specified learning outcomes (final learning state, skills, knowledge, attitudes and values the students leave the course with) you have defined and specified earlier.
+
+\subsection*{Required texts}
+  
+\noindent{\it Discrete Mathematics and Its Applications (7th edition)}, Kenneth H. Rosen.
+
+\subsection*{Reference texts}
+  
+\begin{enumerate}
+\item {\it Mathematics for Computer Science}, Eric Lehman, F Thomson Leighton, and Albert R Meyer.
+\item {\it Discrete Math for Computer Science Students}, Ken Bogart, Scot Drysdale, and Cliff Stein.
+\item {\it Discrete and Combinatorial Mathematics: An Applied Introduction}, Ralph Grimaldi.
+\item {\it Concrete Mathematics: A Foundation for Computer Science}, Ronald Graham, Donald Knuth, and Oren Patashnik.
+\end{enumerate}
+
+\section{Grading Procedures:}
+\label{sec:grade}
+
+Grades will be computed as follows.\\
+\begin{tabular}{|l|l|}
+\hline
+Homework &	25\%\\\hline
+Quizzes &	20\%\\\hline
+Midterm & 	20\%\\\hline
+Final & 	30\%\\\hline
+Recitations & 	10\%\\\hline
+\end{tabular}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \multicolumn{3}{|c|}{\bf GRADING SCALE}\\\hline
+  LETTER GRADE & GPA POINTS & PERCENTAGE\\\hline
+  A+ & 4.00 & [95, 100] \\\hline
+  A & 4.00 & [90, 95) \\\hline
+  A- & 3.67 & [85, 90) \\\hline
+  B+ & 3.33 & [80, 85) \\\hline
+  B & 3.00 & [75, 80) \\\hline
+  B- & 2.67 & [70, 75) \\\hline
+  C+ & 2.33 & [67, 70) \\\hline
+  C & 2.00 & [63, 67) \\\hline
+  C- & 1.67 & [60, 63) \\\hline
+  F & 0.00 & [0, 60)\\\hline
+\end{tabular}
+
+%Keep in mind, as you decide the weighting for the different assignments and tasks you give students it will have a major impact on their effort distribution. For example, if you have many homework assignments and/or quizzes, but not any one of them will count significantly toward the final grade, students may invest less time and commitment to doing them. If a certain percentage of the studentsâ grades are based on class participation, what criteria will be used to make that assessment: quantity or quality? If quality, what determines quality?
+
+\section{Attendance Policy:}
+
+Habib University requires that all freshmen and sophomores must maintain at least 85\% attendance and all juniors and seniors must maintain at least 75\% attendance for each class in which they are registered. Non-compliance with minimum attendance requirements will result in \underline{automatic failure} of the course and may require the student to repeat the course when next offered. This policy is at a minimum. Departments, schools, and individual faculty members \underline{may alter this policy to include stronger attendance requirements} and/or implement them for all levels of students.  It is the responsibility of the student to keep track of their own attendance and speak with their faculty member or the Office of the Registrar for any clarification.
+
+{\bf In this course, a student can miss up to \underline{4 lectures}.}
+
+\section{Accommodations for students with disabilities:}
+
+In compliance with the Habib University policy and equal access laws, I am available to discuss appropriate academic accommodations that may be required for student with disabilities. Requests for academic accommodations are to be made during the first two weeks of the semester, except for unusual circumstances, so arrangements can be made. Students are encouraged to register with the Office of Academic Performance to verify their eligibility for appropriate accommodations.
+
+\section{Inclusivity Statement}
+
+We understand that our members represent a rich variety of backgrounds and perspectives. Habib University is committed to providing an atmosphere for learning that respects diversity. While working together to build this community we ask all members to:
+\begin{itemize}
+\item share their unique experiences, values and beliefs
+\item be open to the views of others 
+\item honor the uniqueness of their colleagues
+\item appreciate the opportunity that we have to learn from each other in this community
+\item value each other's opinions and communicate in a respectful manner
+\item keep confidential discussions that the community has of a personal (or professional) nature 
+\item use this opportunity together to discuss ways in which we can create an inclusive environment in this course and across the Habib community 
+\end{itemize}
+
+\section{Office hours:}
+
+Office hours are reported in the live syllabus. During these hours we will be available to answer questions or provide additional help. Ehsas hours or TA's will be added to the live syllabus once they are finalized.
+
+\section{Academic Integrity}
+
+Each student in this course is expected to abide by the Habib University Student Honor Code of Academic Integrity.  Any work submitted by a student in this course for academic credit will be the student's own work.
+
+% For this course, collaboration is allowed with your buddy in the following instances: \textbf{homework assignments and project}.
+
+Scholastic dishonesty shall be considered a serious violation of these rules and regulations and is subject to strict disciplinary action as prescribed by Habib University regulations and policies. Scholastic dishonesty includes, but is not limited to, cheating on exams, plagiarism on assignments, and collusion.
+\begin{description}
+
+\item[PLAGIARISM:] Plagiarism is the act of taking the work created by another person or entity and presenting it as one's own for the purpose of personal gain or of obtaining academic credit. As per University policy, plagiarism includes the submission of or incorporation of the work of others without acknowledging its provenance or giving due credit according to established academic practices. This includes the submission of material that has been appropriated, bought, received as a gift, downloaded, or obtained by any other means. Students must not, unless they have been granted permission from all faculty members concerned, submit the same assignment or project for academic credit for different courses. 
+
+\item[CHEATING:] The term cheating shall refer to the use of or obtaining of unauthorized information in order to obtain personal benefit or academic credit. 
+
+\item[COLLUSION:] Collusion is the act of providing unauthorized assistance to one or more person or of not taking the appropriate precautions against doing so.
+\end{description}
+
+All violations of academic integrity will also be immediately reported to the Student Conduct Office.  
+
+You are encouraged to study together and to discuss information and concepts covered in lecture and the sections with other students. You can give ``consulting'' help to or receive ``consulting'' help from such students. However, this permissible cooperation should never involve one student having possession of a copy of all or part of work done by someone else, in the form of an e-mail, an e-mail attachment file, a diskette, or a hard copy. 
+
+Should copying occur, the student who copied work from another student and the student who gave material to be copied will both be in violation of the Student Code of Conduct. 
+
+During examinations, you must do your own work. Talking or discussion is not permitted during the examinations, nor may you compare papers, copy from others, or collaborate in any way. Any collaborative behavior during the examinations will result in failure in the exam, and may lead to failure in the course and University disciplinary action.
+
+Penalty for violation of this Code can also be extended to include failure of the course and University disciplinary action. 
+\section{Tentative Course Schedule}
+
+Please see the live syllabus for the updated schedule and other course information. Changes may occur during the semester owing to class progress or other factors. These will be made in the live syllabus and you will be notified accordingly.
+\end{document}
